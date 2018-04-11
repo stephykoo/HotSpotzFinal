@@ -38,7 +38,7 @@ class NewReview extends Component {
 
   componentWillMount(){
     const userId = Auth.getUserId()
-    Auth.fetch(`${apiUrl}/${userId}`).then( res => {
+    Auth.fetch(`${apiUrl}/users/${userId}`).then( res => {
       this.setState({ user: res })
     })
   }
@@ -46,9 +46,7 @@ class NewReview extends Component {
   handleLogout() {
     Auth.logout()
     this.props.history.replace('/login');
-
   }
-
 
   handleChange(event) {
       const formState = Object.assign({}, this.state.form)
@@ -150,7 +148,6 @@ class NewReview extends Component {
     }
 
   render() {
-
     return (
       <div>
       <NavigationPages />
@@ -210,7 +207,6 @@ class NewReview extends Component {
           onStarClick={this.onStarClick.bind(this)}
         />
       </div>
-
            <input
               className="form-item"
               placeholder="$ - Price per Person Spent"

@@ -6,6 +6,7 @@ import StarRatingComponent from 'react-star-rating-component';
 import NavigationPages from './NavigationPages'
 import '../css/NavigationPages.css';
 import runtimeEnv from '@mars/heroku-js-runtime-env';
+import withAuth from './withAuth'
 
 const env = runtimeEnv();
 const apiUrl = env.REACT_APP_API_URL
@@ -20,7 +21,7 @@ function getLoggedUser(){
 }
 
 
-export default class Profile extends Component {
+class Profile extends Component {
   constructor() {
     super();
 
@@ -109,3 +110,5 @@ export default class Profile extends Component {
     );
   }
 }
+
+export default withAuth(Profile)
