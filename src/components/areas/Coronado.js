@@ -9,24 +9,51 @@ import {
 } from 'react-bootstrap';
 import '../../css/Coronado.css'
 import NavigationPages from '../../components/NavigationPages'
+import runtimeEnv from '@mars/heroku-js-runtime-env';
+
+const env = runtimeEnv();
+const apiUrl = env.REACT_APP_API_URL
 
 export default class Coronado extends Component {
   constructor() {
     super();
     this.state = {
-      area: {
-        name: 'Coronado',
-        overallScore: '2.75',
-        parkingScore: '3',
-        cleanlinessScore: '2',
-        safetyScore: '3',
-        affordabilityScore: '3',
-        familyFriendliness: true
-      },
-      comments: [
-
+      averages: [],
+      reviews: [],
+      areas: [
+        'East Village',
+        'Little Italy',
+        'North Park',
+        'Hillcrest',
+        'Gaslamp',
+        'Coronado',
+        'Shelter Island',
+        'Ocean Beach',
+        'Loma Portal'
       ]
     };
+  }
+
+  componentWillMount(){
+    fetch(`${apiUrl}/avg_review_area/6`).then((rawResponse)=>{
+      // rawResponse.json() returns a promise that we pass along
+      return rawResponse.json()
+    }).then((parsedResponse) => {
+      // when this promise resolves, we can work with our data
+      let reviewData = parsedResponse
+        this.setState({averages: parsedResponse})
+    })
+  }
+
+  componentDidMount(){
+    fetch(`${apiUrl}/reviews_by_area_id/6`).then((rawResponse)=>{
+      // rawResponse.json() returns a promise that we pass along
+      return rawResponse.json()
+    }).then((parsedResponse) => {
+      // when this promise resolves, we can work with our data
+      let reviewData = parsedResponse
+        this.setState({reviews: parsedResponse})
+    })
   }
 
   render() {
@@ -35,54 +62,26 @@ export default class Coronado extends Component {
       <NavigationPages />
       <div className="center_coronado">
       <Well className = "opa" id="area-name">
-      {this.state.area.name}
+      {this.state.areas[5]}
       </Well>
       <br />
         <div className="card_coronado">
         <Grid>
           <Row id="overall-score">
-            Overall: {this.state.area.overallScore}
+            Overall: {this.state.averages.rating}
           </Row>
           <Row id="parking-score">
-            Parking: {this.state.area.parkingScore}
+            Parking: {this.state.averages.parking}
           </Row>
           <Row id="cleanliness-score">
-            Cleanliness: {this.state.area.cleanlinessScore}
+            Cleanliness: {this.state.averages.cleanliness}
           </Row>
           <Row id="safety-score">
-            Safety: {this.state.area.safetyScore}
+            Safety: {this.state.averages.safety}
           </Row>
           <Row id="affordability-score">
-            Affordability: {this.state.area.affordabilityScore}
+            Affordability: {this.state.averages.price}
           </Row>
-          <Row id="family-friendliness">
-            Family-friendly? {
-              (this.state.area.familyFriendliness) ? 'Yes' : 'No'
-            }
-          </Row>
-        </Grid>
-        <Grid>
-          {this.state.comments.map((comment, index) => {
-            return (
-              <Panel id="comment-row" key={index}>
-                <Panel.Heading>
-                  <Panel.Title>
-                    <h5 id="comment-author">Review by {comment.author}</h5>
-                  </Panel.Title>
-                </Panel.Heading>
-                <Panel.Body>
-                  <Row>
-                    <Col id="comment-photo">
-                      <img src={comment.photo} alt="comment" />
-                    </Col>
-                    <Col id="comment-text">
-                      {comment.text}
-                    </Col>
-                  </Row>
-                </Panel.Body>
-              </Panel>
-            )
-          })}
         </Grid>
       </div>
       </div>

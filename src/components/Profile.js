@@ -5,8 +5,8 @@ import AuthService from '../services/AuthService'
 import StarRatingComponent from 'react-star-rating-component';
 import NavigationPages from './NavigationPages'
 import '../css/NavigationPages.css';
-import runtimeEnv from '@mars/heroku-js-runtime-env';
 import withAuth from './withAuth'
+import runtimeEnv from '@mars/heroku-js-runtime-env';
 
 const env = runtimeEnv();
 const apiUrl = env.REACT_APP_API_URL
