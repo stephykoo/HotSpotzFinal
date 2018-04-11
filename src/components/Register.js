@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import NavigationPages from './NavigationPages'
 import '../css/NavigationPages.css';
+import runtimeEnv from '@mars/heroku-js-runtime-env';
 
+const env = runtimeEnv();
 
 export default class Register extends Component {
   constructor(props) {
@@ -15,7 +17,7 @@ export default class Register extends Component {
         password: '',
         password_confirmation: ''
       },
-      apiUrl: 'http://localhost:3000',
+      apiUrl: env.REACT_APP_API_URL,
       newUserSuccess: false
     };
   }

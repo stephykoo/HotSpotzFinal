@@ -7,10 +7,11 @@ import AuthService from '../services/AuthService'
 import NavigationPages from './NavigationPages'
 import '../css/NavigationPages.css';
 import withAuth from './withAuth'
+import runtimeEnv from '@mars/heroku-js-runtime-env';
 
 const Auth = new AuthService()
-
-const apiUrl = "http://localhost:3000"
+const env = runtimeEnv();
+const apiUrl = env.REACT_APP_API_URL
 
 class NewReview extends Component {
   constructor(props) {
@@ -37,7 +38,7 @@ class NewReview extends Component {
 
   componentWillMount(){
     const userId = Auth.getUserId()
-    Auth.fetch(`http://localhost:3000/users/${userId}`).then( res => {
+    Auth.fetch(`${apiUrl}/${userId}`).then( res => {
       this.setState({ user: res })
     })
   }

@@ -5,7 +5,9 @@ import '../../css/Navigation.css';
 import '../../css/MapContainer.css';
 import { Link, Router } from 'react-router-dom';
 import { Carousel, Jumbotron, Button } from 'react-bootstrap';
+import runtimeEnv from '@mars/heroku-js-runtime-env';
 
+const env = runtimeEvn();
 
 const styles = {
   map: {
@@ -206,5 +208,5 @@ export class MapContainer extends React.Component {
 }
 
 export default GoogleApiWrapper({
-    apiKey: ()
+    apiKey: (env.REACT_APP_API_KEY)
 })(MapContainer)
