@@ -30,7 +30,7 @@ export class MapContainer extends React.Component {
     constructor(props){
         super(props);
         this.state={
-            url: 'http://localhost:3001',
+            url: env.REACT_APP_API_URL,
             showingInfoWindow: true,
             activeMarker: {},
             selectedPlace: {}
