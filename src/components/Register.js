@@ -5,6 +5,7 @@ import '../css/NavigationPages.css';
 import runtimeEnv from '@mars/heroku-js-runtime-env';
 
 const env = runtimeEnv();
+const apiUrl = env.REACT_APP_API_URL
 
 export default class Register extends Component {
   constructor(props) {
@@ -17,7 +18,6 @@ export default class Register extends Component {
         password: '',
         password_confirmation: ''
       },
-      apiUrl: env.REACT_APP_API_URL,
       newUserSuccess: false
     };
   }
@@ -31,7 +31,7 @@ export default class Register extends Component {
 
   handleFormSubmit(event) {
     event.preventDefault();
-    fetch(`${this.state.apiUrl}/users`,
+    fetch(`${apiUrl}/users`,
       {
         body: JSON.stringify({ user: this.state.form }),
         headers: {

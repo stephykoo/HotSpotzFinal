@@ -8,6 +8,7 @@ import '../css/NavigationPages.css';
 import runtimeEnv from '@mars/heroku-js-runtime-env';
 
 const env = runtimeEnv();
+const apiUrl = env.REACT_APP_API_URL
 
 const Auth = new AuthService()
 const loggedUser = getLoggedUser()
@@ -24,7 +25,6 @@ export default class Profile extends Component {
     super();
 
     this.state = {
-      apiUrl: env.REACT_APP_API_URL,
       user: {},
       reviews: [],
       areas: [
@@ -41,7 +41,7 @@ export default class Profile extends Component {
     };
   }
   componentWillMount(){
-  fetch(`${this.state.apiUrl}/users/${loggedUser}`).then((rawResponse)=>{
+  fetch(`${apiUrl}/users/${loggedUser}`).then((rawResponse)=>{
     // rawResponse.json() returns a promise that we pass along
     return rawResponse.json()
   }).then((parsedResponse) => {
@@ -52,7 +52,7 @@ export default class Profile extends Component {
   }
 
   componentDidMount(){
-    fetch(`${this.state.apiUrl}/reviews_by_user_id/${loggedUser}`).then((rawResponse)=>{
+    fetch(`${apiUrl}/reviews_by_user_id/${loggedUser}`).then((rawResponse)=>{
       // rawResponse.json() returns a promise that we pass along
       return rawResponse.json()
     }).then((parsedResponse) => {
