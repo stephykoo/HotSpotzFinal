@@ -7,7 +7,7 @@ import { Link, Router } from 'react-router-dom';
 import { Carousel, Jumbotron, Button } from 'react-bootstrap';
 import runtimeEnv from '@mars/heroku-js-runtime-env';
 
-const env = runtimeEvn();
+const env = runtimeEnv();
 
 const styles = {
   map: {
