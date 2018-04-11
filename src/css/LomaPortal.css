@@ -1,0 +1,44 @@
+.center_lomaportal {
+  background-image: url("https://marclyman.com/wp-content/uploads/2014/11/point-loma-san-diego-bay-skyline.jpg");
+  background-color:white;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.card_lomaportal {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 0.8rem;
+  border-color: #337ab7;
+  border-width: 8px;
+  width: 400px;
+}
+
+.card > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.card h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: grey;
+  font-weight:bold;
+}
+
+.opa {
+  opacity: .7;
+  font-size: 85px;
+}
+
+.well {
+  margin-right:200px;
+  margin-bottom:200px;
+}

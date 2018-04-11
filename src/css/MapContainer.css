@@ -1,0 +1,13 @@
+h1.jumbo {
+
+  text-align: center;
+}
+
+p.jumbo {
+  text-align: center;
+}
+
+img.carousel {
+  width: 100%; /*slider width*/
+      max-height: 600px;
+}

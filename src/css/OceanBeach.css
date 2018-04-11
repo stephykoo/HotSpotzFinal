@@ -1,0 +1,44 @@
+.center_oceanbeach {
+  background-image: url("https://cdn.thecrazytourist.com/wp-content/uploads/2017/09/ccimage-3651097797_2161724fc9_b-1024x683.jpg");
+  background-color:white;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.card_oceanbeach {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 0.8rem;
+  border-color: #337ab7;
+  border-width: 8px;
+  width: 400px;
+}
+
+.card > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.card h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: grey;
+  font-weight:bold;
+}
+
+.opa {
+  opacity: .7;
+  font-size: 85px;
+}
+
+.well {
+  margin-right:200px;
+  margin-bottom:200px;
+}

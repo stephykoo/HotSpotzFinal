@@ -1,0 +1,94 @@
+.navbar {
+
+  overflow: hidden;
+  padding-top:40px;
+  color: #fff;
+  text-align: center;
+  background-repeat: no-repeat;
+
+}
+
+#hp {
+  background-image: url("https://www.marinainnsandiego.com/assets/themes/marinainnsandiego/img/San-diego-skyline-near-marina-Inn-&-Suites.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1.nav {
+  margin-top: -10px;
+  color: white;
+  margin-right: 250px;
+  margin-bottom: 10px;
+  font-size: 80px;
+  color: white;
+  margin-left: -300px;
+}
+
+.brand {
+  padding-bottom:500px;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  margin-right: 10px;
+  padding-bottom:10px;
+  text-indent: 20em;
+  padding-top: 80px;
+  background-size: cover;
+}
+
+.homepage {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.choices {
+  padding-left:240px;
+  padding-bottom:30px;
+}
+
+.destination {
+  text-align: center;
+  font-size: 50px;
+  color:grey;
+  font-weight: bold;
+}
+
+.border {
+  background-color: #fff;
+  border-radius: 15px;
+  border-color: lightblue;
+  border-width: 8px;
+}
+
+.space {
+  margin-top: -15px;
+}
+
+.hello3 {
+  padding-top:15px;
+  font-size: 14px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

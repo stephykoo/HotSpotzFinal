@@ -1,0 +1,112 @@
+.navbar{
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  background-repeat: no-repeat;
+  margin-top: -150px;
+}
+
+#p {
+  background-color:lightblue;
+
+}
+
+a {
+  color:#2aabd2;
+}
+
+h1.pages {
+  margin-bottom: 10px;
+  color: #2aabd2;
+  margin-right: 100px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  margin-left: -950px;
+  padding-bottom:65px;
+
+}
+
+.brand {
+  padding-bottom:500px;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  margin-right: 10px;
+  padding-bottom:10px;
+  text-indent: 20em;
+  padding-top: 80px;
+}
+
+.card_register {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 0.8rem;
+    border-color: #337ab7;
+    border-width: 8px;
+    width:300px;
+  }
+
+
+.homepage {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.navlist {
+  margin-left:500px;
+  color:white;
+}
+
+.navbar-nav {
+
+  margin-right:-370px;
+
+  color:white;
+  font-size:15px;
+  margin-top:120px;
+}
+
+.location {
+  padding-left:640px;
+  font-size: 50px;
+}
+
+.border {
+  background-color: #fff;
+  border-radius: 15px;
+  border-color: lightblue;
+  border-width: 8px;
+}
+
+.space {
+  margin-top: -15px;
+}
+
+.hello3 {
+  padding-top:15px;
+  font-size: 14px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
