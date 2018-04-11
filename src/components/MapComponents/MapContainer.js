@@ -3,8 +3,7 @@ import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import Navigation from '../../components/Navigation';
 import '../../css/Navigation.css';
 import '../../css/MapContainer.css';
-import { Link, Router } from 'react-router-dom';
-import { Carousel, Jumbotron, Button } from 'react-bootstrap';
+import { Carousel, Jumbotron } from 'react-bootstrap';
 import runtimeEnv from '@mars/heroku-js-runtime-env';
 
 const env = runtimeEnv();
@@ -58,7 +57,6 @@ export class MapContainer extends React.Component {
 
 
     render() {
-        const {directions} = this.state;
         return (
         <div>
           <Navigation />
@@ -72,21 +70,21 @@ export class MapContainer extends React.Component {
             </Jumbotron>
               <Carousel>
                 <Carousel.Item>
-                  <img className = "carousel"  src="https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/253/2017/05/18123334/ct-trav-0322-food-gaslamp-san-diego-20150313.jpg" />
+                  <img className = "carousel" alt="Gaslamp" src="https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/253/2017/05/18123334/ct-trav-0322-food-gaslamp-san-diego-20150313.jpg" />
                   <Carousel.Caption>
                     <h3>Gaslamp</h3>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel"  src="http://kathy.socialempiremedia.com/wp-content/uploads/2011/03/Downtown-11822685-Med-Copy.jpg" />
+                  <img className = "carousel" alt="East Village" src="http://kathy.socialempiremedia.com/wp-content/uploads/2011/03/Downtown-11822685-Med-Copy.jpg" />
                   <Carousel.Caption>
                     <h3>East Village</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel"
+                  <img className = "carousel" alt="North Park"
                    src="https://static.tripping.com/uploads/image/0/775/northpark.jpg" />
                   <Carousel.Caption>
                     <h3>North Park</h3>
@@ -101,8 +99,7 @@ export class MapContainer extends React.Component {
           <div className = "border">
           <Map className = "mapborder"
             google={this.props.google}
-            onClick={this.onMapClicked}
-            zoom={12}
+            onClick={this.onMapClicked} alt="North Park"
             style={styles.map}
 
             containerStyle={styles.container}
