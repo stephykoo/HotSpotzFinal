@@ -5,6 +5,9 @@ import AuthService from '../services/AuthService'
 import StarRatingComponent from 'react-star-rating-component';
 import NavigationPages from './NavigationPages'
 import '../css/NavigationPages.css';
+import runtimeEnv from '@mars/heroku-js-runtime-env';
+
+const env = runtimeEnv();
 
 const Auth = new AuthService()
 const loggedUser = getLoggedUser()
@@ -21,7 +24,7 @@ export default class Profile extends Component {
     super();
 
     this.state = {
-      apiUrl: "http://localhost:3000",
+      apiUrl: env.REACT_APP_API_URL,
       user: {},
       reviews: [],
       areas: [
