@@ -25,7 +25,6 @@ class NewReview extends Component {
         safety: 0,
         dining: 0,
         price: 0,
-        family_friendly: false,
         review_text: '',
         user_id: Auth.getUserId()
       },
@@ -215,12 +214,6 @@ class NewReview extends Component {
               onChange={this.handleChange.bind(this)}
               value={this.state.form.price}
             />
-            <div>
-            Family Friendly? <nbs />
-            <input type="radio" name="family_friendly" value="yes"  /> YES <nbs />
-            <input type="radio" name="family_friendly" value="no"  /> NO
-            </div>
-
 
             <div>Write your review here: </div>
             <input
@@ -243,6 +236,7 @@ class NewReview extends Component {
           </form>
         </div>
       </div>
+        { this.state.newReviewSuccess && <Redirect to='/profile' /> }
       </div>
     );
   }

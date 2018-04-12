@@ -33,9 +33,6 @@ export default class Navigation extends Component {
      <NavItem className = "hello2" eventKey={5} href="/profile">
        Profile
      </NavItem>
-     <NavItem className = "hello2" eventKey={5} href="/area">
-       Review
-     </NavItem>
      <NavItem className = "hello2" eventKey={5} href="/newreview">
      Submit New Review
      </NavItem>

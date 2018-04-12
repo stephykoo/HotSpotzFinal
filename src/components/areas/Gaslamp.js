@@ -83,7 +83,19 @@ export default class Gaslamp extends Component {
             Affordability: {this.state.averages.price}
           </Row>
         </Grid>
-
+        <Grid>
+        <Row><h3>Comments</h3></Row>
+          {this.state.reviews.map((reviews, index) =>{
+              return(
+                <Col xs={12} md={8}>
+                  <Col>
+                    <div>{reviews.review_text}</div>
+                  </Col>
+                </Col>
+              )
+              }
+              )}
+        </Grid>
       </div>
       </div>
       </div>

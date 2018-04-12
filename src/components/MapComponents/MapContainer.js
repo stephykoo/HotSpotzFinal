@@ -65,7 +65,6 @@ export class MapContainer extends React.Component {
               <p className = "jumbo">
                 Find, Review, and Discover the best places to visit in San Diego!
               </p>
-                <button type="button" class="btn btn-info" href="/area">Button Here</button>
 
             </Jumbotron>
               <Carousel>

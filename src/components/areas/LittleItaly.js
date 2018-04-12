@@ -65,7 +65,7 @@ export default class LittleItaly extends Component {
       {this.state.areas[1]}
       </Well>
       <br />
-        <div className="card_littleitaly">
+        <div className="card">
         <Grid>
           <Row id="overall-score">
             Overall: {this.state.averages.rating}
@@ -82,6 +82,21 @@ export default class LittleItaly extends Component {
           <Row id="affordability-score">
             Affordability: {this.state.averages.price}
           </Row>
+        </Grid>
+        <Grid>
+        <Row><h3>Comments</h3></Row>
+          {this.state.reviews.map((reviews, index) =>{
+              return(
+                <p className = "nobreak">
+                <Col xs={12} md={8}>
+                  <Col>
+                    <div>{reviews.review_text}</div>
+                  </Col>
+                </Col>
+                </p>
+              )
+              }
+              )}
         </Grid>
 
       </div>

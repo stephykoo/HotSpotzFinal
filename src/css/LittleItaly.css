@@ -42,3 +42,7 @@
   margin-right:200px;
   margin-bottom:200px;
 }
+
+.nobreak {
+  word-wrap:break-word;
+}

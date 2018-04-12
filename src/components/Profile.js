@@ -74,14 +74,18 @@ class Profile extends Component {
               <p>{this.state.user.avatar_base}</p>
             </Row>
             <Row id="name">
+            <b>Name: <br /></b>
               <p>{this.state.user.name}</p>
             </Row>
             <Row id="username">
+            <b>Username: <br /></b>
               <p>{this.state.user.username}</p>
             </Row>
           </Col>
+
+          <div className="card">
           <Col>
-            <Row><h3>Your Reviews</h3></Row>
+            <Row><h1 className = "review">Your Reviews</h1></Row>
           {this.state.reviews.map((review, index) =>{
             return(
           <Col xs={12} md={8}>
@@ -96,7 +100,7 @@ class Profile extends Component {
               <div>Safety: <StarRatingComponent starCount={5} value={review.safety}/></div>
 
               <div>Price Per Person: ${review.price}</div>
-              <div>Family Friendly? {review.family_friendly}</div>
+
               <div>Review: {review.review_text}</div>
             </Col>
           </Col>
@@ -104,6 +108,8 @@ class Profile extends Component {
         }
         )}
         </Col>
+        </div>
+
         </Row>
       </Grid>
       </div>

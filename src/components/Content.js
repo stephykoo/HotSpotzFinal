@@ -4,7 +4,6 @@ import Login from './Login';
 import Profile from './Profile';
 import NewReview from './NewReview'
 import Home from './Home.js';
-import Area from './Area';
 import Coronado from './areas/Coronado'
 import EastVillage from './areas/EastVillage'
 import Gaslamp from './areas/Gaslamp'
@@ -22,7 +21,6 @@ const Content = () => (
 	  <Route exact path="/" component={Home} />
     <Route exact path="/profile" component={Profile} />
     <Route exact path="/newreview" component={NewReview} />
-    <Route exact path="/area" component={Area} />
     <Route exact path="/register" component={Register} />
     <Route exact path="/coronado" component={Coronado} />
     <Route exact path="/eastvillage" component={EastVillage} />
