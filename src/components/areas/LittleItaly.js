@@ -75,7 +75,7 @@ export default class LittleItaly extends Component {
             Parking: {this.state.averages.parking}
           </Row>
           <Row id="cleanliness-score">
-            Cleanliness: {this.state.averages.cleanliness}
+            Cleanliness: {this.state.averages.cleanliness.toFixed(2)}
           </Row>
           <Row id="safety-score">
             Safety: {this.state.averages.safety}
