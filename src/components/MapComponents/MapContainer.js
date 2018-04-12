@@ -71,23 +71,65 @@ export class MapContainer extends React.Component {
                 <Carousel.Item>
                   <img className = "carousel" alt="Gaslamp" src="https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/253/2017/05/18123334/ct-trav-0322-food-gaslamp-san-diego-20150313.jpg" />
                   <Carousel.Caption>
-                    <h3>Gaslamp</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3>1. Gaslamp</h3>
+                    <p></p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="East Village" src="http://kathy.socialempiremedia.com/wp-content/uploads/2011/03/Downtown-11822685-Med-Copy.jpg" />
+                  <img className = "carousel" alt="East Village" src="https://www.udr.com/uploadedImages/UDR3/Communities/13th_+_Market/images/HR_MainHeader_Overview_1900x874_13thAndMarket_2013_BDG4_EL.jpg?n=70" />
                   <Carousel.Caption>
-                    <h3>East Village</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>2. East Village</h3>
+                    <p></p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="North Park"
-                   src="https://static.tripping.com/uploads/image/0/775/northpark.jpg" />
+                  <img className = "carousel" alt="Little Italy"
+                   src="https://pre00.deviantart.net/e956/th/pre/i/2013/079/8/a/little_italy___san_diego_by_timothylgreen-d5yp4kt.jpg" />
                   <Carousel.Caption>
-                    <h3>North Park</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h3>3. Little Italy</h3>
+                    <p></p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img className = "carousel" alt="North Park" src="https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/253/2017/05/18123334/ct-trav-0322-food-gaslamp-san-diego-20150313.jpg" />
+                  <Carousel.Caption>
+                    <h3>4. North Park</h3>
+                    <p></p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img className = "carousel" alt="Hillcrest" src="http://www.magnusresults.com/wp-content/gallery/hillcrestuniversity-heights/hillcrest-at-night.jpg" />
+                  <Carousel.Caption>
+                    <h3>5. Hillcrest</h3>
+                    <p></p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img className = "carousel" alt="Coronado" src="http://coronadovisitorcenter.com/static/media/uploads/del_holiday.jpg" />
+                  <Carousel.Caption>
+                    <h3>6. Coronado</h3>
+                    <p></p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img className = "carousel" alt="Shelter Island Area" src="http://www.halfmooninn.com/resourcefiles/mainimages/shelter-island-near-humphreys-half-moon-inn-suites-california.jpg" />
+                  <Carousel.Caption>
+                    <h3>7. Shelter Island Area</h3>
+                    <p></p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img className = "carousel" alt="Ocean Beach" src="https://cdn.thecrazytourist.com/wp-content/uploads/2017/09/ccimage-3651097797_2161724fc9_b-1024x683.jpg" />
+                  <Carousel.Caption>
+                    <h3>8. Ocean Beach</h3>
+                    <p></p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img className = "carousel" alt="Loma Portal" src="https://marclyman.com/wp-content/uploads/2014/11/point-loma-san-diego-bay-skyline.jpg" />
+                  <Carousel.Caption>
+                    <h3>9. Loma Portal</h3>
+                    <p></p>
                   </Carousel.Caption>
                 </Carousel.Item>
               </Carousel>
