@@ -67,6 +67,7 @@ class Profile extends Component {
     return (
       <div>
       <NavigationPages />
+      <div className = "shore">
       <Grid>
         <Row className="show-grid">
           <Col xs={6} md={4}>
@@ -88,7 +89,6 @@ class Profile extends Component {
             <Row><h1 className = "review">Your Reviews</h1></Row>
           {this.state.reviews.map((review, index) =>{
             return(
-          <Col xs={12} md={8}>
             <Col>
               <h2>{this.state.areas[review.area_id - 1]} {review.area_rating}</h2>
               <div>Dining: <StarRatingComponent starCount={5} value={review.dining}/> </div>
@@ -103,15 +103,15 @@ class Profile extends Component {
 
               <div>Review: {review.review_text}</div>
             </Col>
-          </Col>
+
         )
         }
         )}
         </Col>
         </div>
-
         </Row>
       </Grid>
+      </div>
       </div>
     );
   }

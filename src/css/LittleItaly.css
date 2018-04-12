@@ -46,3 +46,7 @@
 .nobreak {
   word-wrap:break-word;
 }
+
+.comments {
+  margin-left:120px;
+}

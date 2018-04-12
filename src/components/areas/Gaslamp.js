@@ -65,7 +65,7 @@ export default class Gaslamp extends Component {
       {this.state.areas[4]}
       </Well>
       <br />
-        <div className="card_gaslamp">
+        <div className="card">
         <Grid>
           <Row id="overall-score">
             Overall: {this.state.averages.rating}
@@ -83,19 +83,19 @@ export default class Gaslamp extends Component {
             Affordability: {this.state.averages.price}
           </Row>
         </Grid>
-        <Grid>
-        <Row><h3>Comments</h3></Row>
+        <Col>
+        <Row><h2 className = "comments">Comments</h2></Row>
           {this.state.reviews.map((reviews, index) =>{
               return(
-                <Col xs={12} md={8}>
+                <p className = "nobreak">
                   <Col>
                     <div>{reviews.review_text}</div>
                   </Col>
-                </Col>
+                </p>
               )
               }
               )}
-        </Grid>
+        </Col>
       </div>
       </div>
       </div>

@@ -43,7 +43,6 @@
 
 .form-submit {
   height: 35px;
-  color: grey;
   background-color: lightblue;
   border: none;
   transition: 0.3s opacity ease;
@@ -73,4 +72,15 @@ body {
 h1.review {
   text-align:center;
   padding-left:80px;
+}
+
+button.form-submit {
+  margin-left:100px;
+  width:50%;
+}
+
+.shore {
+background-image: url("https://trbbbbb.com/wp-content/uploads/data/2018/1/6/sea-ocean-water-sky-horizon-PIC-WSW30311494.jpg");
+background-repeat: no-repeat;
+background-size:cover;
 }

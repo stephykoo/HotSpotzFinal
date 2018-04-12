@@ -110,3 +110,7 @@ h1.pages {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+#name, #username {
+  color:white;
+}

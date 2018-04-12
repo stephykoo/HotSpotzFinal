@@ -29,7 +29,7 @@ export default class Navigation extends Component {
        <button type="button" class="btn btn-primary">Profile</button>
      </NavItem>
      <NavItem className = "hello2" eventKey={5} href="/newreview">
-     <button type="button" class="btn btn-primary">Submit New Review</button>
+     <button type="button" class="btn btn-info">Submit New Review</button>
      </NavItem>
      <NavItem className = "hello2" eventKey={5} href="/login">
       <button type="button" class="btn btn-primary" onClick={Auth.logout}>Logout</button>
