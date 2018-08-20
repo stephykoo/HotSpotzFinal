@@ -69,14 +69,14 @@ export class MapContainer extends React.Component {
             </Jumbotron>
               <Carousel>
                 <Carousel.Item>
-                  <img className = "carousel" alt="Gaslamp" src="https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/253/2017/05/18123334/ct-trav-0322-food-gaslamp-san-diego-20150313.jpg" />
+                  <img className = "carousel" alt="Gaslamp" src="../img/gaslamp.jpg" />
                   <Carousel.Caption>
                     <h3>1. Gaslamp</h3>
                     <p></p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="East Village" src="https://www.udr.com/uploadedImages/UDR3/Communities/13th_+_Market/images/HR_MainHeader_Overview_1900x874_13thAndMarket_2013_BDG4_EL.jpg?n=70" />
+                  <img className = "carousel" alt="East Village" src="../img/eastvillage.jpg" />
                   <Carousel.Caption>
                     <h3>2. East Village</h3>
                     <p></p>
@@ -84,49 +84,49 @@ export class MapContainer extends React.Component {
                 </Carousel.Item>
                 <Carousel.Item>
                   <img className = "carousel" alt="Little Italy"
-                   src="https://pre00.deviantart.net/e956/th/pre/i/2013/079/8/a/little_italy___san_diego_by_timothylgreen-d5yp4kt.jpg" />
+                  src="../img/littleitaly.jpg" />
                   <Carousel.Caption>
                     <h3>3. Little Italy</h3>
                     <p></p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="North Park" src="https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/253/2017/05/18123334/ct-trav-0322-food-gaslamp-san-diego-20150313.jpg" />
+                  <img className = "carousel" alt="North Park" src="../img/northpark.jpg" />
                   <Carousel.Caption>
                     <h3>4. North Park</h3>
                     <p></p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="Hillcrest" src="http://www.magnusresults.com/wp-content/gallery/hillcrestuniversity-heights/hillcrest-at-night.jpg" />
+                  <img className = "carousel" alt="Hillcrest" src="../img/hillcrest.jpg" />
                   <Carousel.Caption>
                     <h3>5. Hillcrest</h3>
                     <p></p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="Coronado" src="http://coronadovisitorcenter.com/static/media/uploads/del_holiday.jpg" />
+                  <img className = "carousel" alt="Coronado" src="../img/coronado.jpg" />
                   <Carousel.Caption>
                     <h3>6. Coronado</h3>
                     <p></p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="Shelter Island Area" src="http://www.halfmooninn.com/resourcefiles/mainimages/shelter-island-near-humphreys-half-moon-inn-suites-california.jpg" />
+                  <img className = "carousel" alt="Shelter Island Area" src="../img/shelterisland.jpg" />
                   <Carousel.Caption>
                     <h3>7. Shelter Island Area</h3>
                     <p></p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="Ocean Beach" src="https://cdn.thecrazytourist.com/wp-content/uploads/2017/09/ccimage-3651097797_2161724fc9_b-1024x683.jpg" />
+                  <img className = "carousel" alt="Ocean Beach" src="../img/oceanbeach.jpg" />
                   <Carousel.Caption>
                     <h3>8. Ocean Beach</h3>
                     <p></p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="Loma Portal" src="https://marclyman.com/wp-content/uploads/2014/11/point-loma-san-diego-bay-skyline.jpg" />
+                  <img className = "carousel" alt="Loma Portal" src="../img/lomaportal.jpg" />
                   <Carousel.Caption>
                     <h3>9. Loma Portal</h3>
                     <p></p>
