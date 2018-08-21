@@ -112,7 +112,7 @@ export class MapContainer extends React.Component {
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="Shelter Island Area" src=http:"http://www.islandpalms.com/resourcefiles/mainimages/island-marina_1.jpg" />
+                  <img className = "carousel" alt="Shelter Island Area" src="http://www.islandpalms.com/resourcefiles/mainimages/island-marina_1.jpg" />
                   <Carousel.Caption>
                     <h3>7. Shelter Island Area</h3>
                     <p></p>
