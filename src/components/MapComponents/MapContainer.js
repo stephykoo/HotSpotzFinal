@@ -84,7 +84,7 @@ export class MapContainer extends React.Component {
                 </Carousel.Item>
                 <Carousel.Item>
                   <img className = "carousel" alt="Little Italy"
-                  src="https://pre00.deviantart.net/e956/th/pre/i/2013/079/8/a/little_italy___san_diego_by_timothylgreen-d5yp4kt.jpg" />
+                  src="https://www.welcometosandiego.com/wp-content/uploads/2009/11/little-italy-condos-San-Diego.png" />
                   <Carousel.Caption>
                     <h3>3. Little Italy</h3>
                     <p></p>
