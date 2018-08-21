@@ -69,14 +69,14 @@ export class MapContainer extends React.Component {
             </Jumbotron>
               <Carousel>
                 <Carousel.Item>
-                  <img className = "carousel" alt="Gaslamp" src="../../img/gaslamp.jpg" />
+                  <img className = "carousel" alt="Gaslamp" src="../../../img/gaslamp.jpg" />
                   <Carousel.Caption>
                     <h3>1. Gaslamp</h3>
                     <p></p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="East Village" src="../../img/eastvillage.jpg" />
+                  <img className = "carousel" alt="East Village" src="../../../img/eastvillage.jpg" />
                   <Carousel.Caption>
                     <h3>2. East Village</h3>
                     <p></p>
@@ -91,42 +91,42 @@ export class MapContainer extends React.Component {
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="North Park" src="../../img/northpark.jpg" />
+                  <img className = "carousel" alt="North Park" src="../../../img/northpark.jpg" />
                   <Carousel.Caption>
                     <h3>4. North Park</h3>
                     <p></p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="Hillcrest" src="../../img/hillcrest.jpg" />
+                  <img className = "carousel" alt="Hillcrest" src="../../../img/hillcrest.jpg" />
                   <Carousel.Caption>
                     <h3>5. Hillcrest</h3>
                     <p></p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="Coronado" src="../../img/coronado.jpg" />
+                  <img className = "carousel" alt="Coronado" src="../../../img/coronado.jpg" />
                   <Carousel.Caption>
                     <h3>6. Coronado</h3>
                     <p></p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="Shelter Island Area" src="../../img/shelterisland.jpg" />
+                  <img className = "carousel" alt="Shelter Island Area" src="../../../img/shelterisland.jpg" />
                   <Carousel.Caption>
                     <h3>7. Shelter Island Area</h3>
                     <p></p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="Ocean Beach" src="../../img/oceanbeach.jpg" />
+                  <img className = "carousel" alt="Ocean Beach" src="../../../img/oceanbeach.jpg" />
                   <Carousel.Caption>
                     <h3>8. Ocean Beach</h3>
                     <p></p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="Loma Portal" src="../../img/lomaportal.jpg" />
+                  <img className = "carousel" alt="Loma Portal" src="../../../img/lomaportal.jpg" />
                   <Carousel.Caption>
                     <h3>9. Loma Portal</h3>
                     <p></p>
