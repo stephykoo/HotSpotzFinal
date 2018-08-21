@@ -98,7 +98,7 @@ export class MapContainer extends React.Component {
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="Hillcrest" src="http://www.magnusresults.com/wp-content/gallery/hillcrestuniversity-heights/hillcrest-at-night.jpg" />
+                  <img className = "carousel" alt="Hillcrest" src="https://bt-wpstatic.freetls.fastly.net/wp-content/blogs.dir/2286/files/2017/11/1.jpg" />
                   <Carousel.Caption>
                     <h3>5. Hillcrest</h3>
                     <p></p>
@@ -112,7 +112,7 @@ export class MapContainer extends React.Component {
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="Shelter Island Area" src="http://www.halfmooninn.com/resourcefiles/mainimages/shelter-island-near-humphreys-half-moon-inn-suites-california.jpg" />
+                  <img className = "carousel" alt="Shelter Island Area" src=http:"http://www.islandpalms.com/resourcefiles/mainimages/island-marina_1.jpg" />
                   <Carousel.Caption>
                     <h3>7. Shelter Island Area</h3>
                     <p></p>
