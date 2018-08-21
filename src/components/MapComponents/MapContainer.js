@@ -91,7 +91,7 @@ export class MapContainer extends React.Component {
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img className = "carousel" alt="North Park" src="https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/253/2017/05/18123334/ct-trav-0322-food-gaslamp-san-diego-20150313.jpg" />
+                  <img className = "carousel" alt="North Park" src="http://198.211.117.89/wp-content/uploads/2017/04/NorthPark.jpg" />
                   <Carousel.Caption>
                     <h3>4. North Park</h3>
                     <p></p>
